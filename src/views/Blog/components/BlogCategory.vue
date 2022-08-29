@@ -17,7 +17,7 @@ export default {
   },
   computed: {
     categoryId() {
-      return +this.$route.params.categoryid || -1;
+      return this.$route.params.categoryId || -1;
     },
     limit() {
       return +this.$route.query.limit || 10;
